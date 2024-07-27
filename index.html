@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>rserviente</title>
     <link rel="stylesheet" href="src/css/style.css" />
     <link rel="stylesheet" href="src/css/mediaqueries.css" />
+    <link rel="shortcut icon" href="icon2.ico" type="image/x-icon">
 
-    
   </head>
   <body>
     <nav id="desktop-nav">
@@ -100,13 +100,12 @@
         </div>
     
         <div class="workflow">
-          <h4>WORKFLOW</h4>
+          <h4>SKILLS & EXPERTISE</h4>
           <ul>
             <li>Problem Solving and Critical Thinking</li>
             <li>Continuous Learning and Development</li>
             <li>Project Planning and Time Management</li>
             <li>Mobile-First, Responsive Design</li>
-            <li>Cross Functional Teams</li>
             <li>Agile Development & Scrum</li>
             
           </ul>
@@ -121,15 +120,17 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="/src/images/image2.jpg"
+                src="/src/images/CNB_Image.png"
                 alt="Project 1"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">ChatNB</h2>
+            <h2 class="experience-sub-title project-title">ChatNB : AI Chatbot</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
+                id="myBtn"
+                onclick="openModal('modal1')"
               >
                 Preview
               </button>
@@ -138,7 +139,7 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="/src/images/image2.jpg"
+                src="/src/images/RS_Image.png"
                 alt="Project 2"
                 class="project-img"
               />
@@ -147,18 +148,64 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
+                onclick="openModal('modal2')"
+
               >
                 Preview
               </button>
-
             </div>
           </div>
-
         </div>
       </div>
     </section>
+
+
+      <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <span class="close" onclick="closeModal('modal1')">&times;</span>
+    <div class="modal-content">
+      <div class="carousel">
+        <div class="carousel-slide">
+          <img src="/src/images/CNB-1.png" alt="Project 1 Image 1">
+        </div>
+        <div class="carousel-slide">
+          <img src="/src/images/CNB-2.png" alt="Project 1 Image 2">
+        </div>
+        <div class="carousel-slide">
+          <img src="/src/images/CNB-3.png" alt="Project 1 Image 2">
+        </div>
+        <div class="carousel-slide">
+          <img src="/src/images/CNB-4.png" alt="Project 1 Image 2">
+        </div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1, 'modal1')">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 'modal1')">&#10095;</a>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <span class="close" onclick="closeModal('modal2')">&times;</span>
+    <div class="modal-content">
+      <div class="carousel">
+        <div class="carousel-slide">
+          <img src="/src/images/RS-1.png" alt="Project 2 Image 1">
+        </div>
+        <div class="carousel-slide">
+          <img src="/src/images/RS-2.png" alt="Project 2 Image 2">
+        </div>
+        <div class="carousel-slide">
+          <img src="/src/images/RS-3.png" alt="Project 2 Image 2">
+        </div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1, 'modal2')">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 'modal2')">&#10095;</a>
+    </div>
+  </div>
+
+
+
     <section id="contact">
-      <h1 class="title">Contact Me</h1>
+      <h1 class="title">GET IN TOUCH</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
           <img width="48" height="48" src="https://img.icons8.com/color/48/gmail-new.png" alt="gmail-new"/>
